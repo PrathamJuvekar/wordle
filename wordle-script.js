@@ -69,7 +69,7 @@ function submitGuess() {
   }
 
   if (guess === WORD_TO_GUESS) {
-    message.textContent = "🎉 Correct! You win!";
+    message.textContent = "Correct! You win!";
     document.removeEventListener("keydown", handleKeyPress);
     return;
   }
@@ -78,7 +78,7 @@ function submitGuess() {
   currentGuess = "";
 
   if (currentAttempt === MAX_ATTEMPTS) {
-    message.textContent = `❌ Game Over! The word was ${WORD_TO_GUESS}`;
+    message.textContent = `Game Over! The word was ${WORD_TO_GUESS}`;
     document.removeEventListener("keydown", handleKeyPress);
   }
 }

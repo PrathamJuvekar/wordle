@@ -11,16 +11,24 @@ body {
   grid-template-rows: repeat(6, 1fr);
   gap: 10px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
-button{
-    padding: 10px;
+.btn{
+    padding: 12px 24px;
     background-color: white;
-    height: 60px;
-    width: 100px;
-    border-radius: 20px;
-    border: none;
+    border-radius:12px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transform: background-color ease 0.5s;
 }
+
+.btn:hover{
+  color: white;
+  background-color: #3a3a3c;
+  border: 1px solid gray;
+}
+
 
 .row {
   display: flex;
